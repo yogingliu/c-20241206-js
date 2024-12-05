@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <h1>hi</h1>
+  <div id="hey"></div>
+  <button onclick="ClickHandler()">click</button>
+</body>
+<script>
+var b = 3
+function ClickHandler() {
+  document.getElementById('hey').innerText = 'cat'
+}
+function Return2() {
+  console.log('Return2') //3
+
+  return 2
+  console.log('Return2') //4
+}
+// early return
+// function ClickHandler() {
+//   let c = 2
+//   const d = 3
+//   // it's small
+//   console.log('click') //1
+//   console.log('click') //2
+//   var a = Return2()
+//   console.log(a)
+// }
+
+// 如果是 3 的倍數，印出 'a'
+// 如果是 5 的倍數，印出 'b'
+// 如果是 15 的倍數，印出 'c'
+// function ClickHandler() {
+//   let a = 2
+//   if(a === 0) {
+
+//   }
+//   else if(a === 1) {
+
+//   }
+//   else {
+
+//   }
+// }
+
+// function ClickHandler() {
+//   let str = [1, 2, 3]
+//   for(let i = 1; i< 10; i++) {
+
+//       for(let j = 1; j<10; j++) {
+//           str.push(`${i} * ${j} = ${i*j}`) 
+//       }
+//   }
+//   console.log(str.join(`
+//   `))
+// }
+
+// function ClickHandler() {
+//   let a = 'Apple'
+//   switch(a) {
+//     case 'Banana':
+//       let b = 3
+//       console.log('banana')
+//       break
+//     case 'Apple': {
+//       let b = 4
+//       console.log('Apple')
+//       break
+//     }
+//     default: 
+//       console.log('other')
+//       break
+//   }
+// }
+// // function ClickHandler() {
+//   var arr = [1,2,3,4,5]
+  
+//   // function func2(item, item2, item3) {
+//   //   return item3
+//   // }
+//   // const func = (item) => {
+//   //   return item
+//   // }
+//   // console.log(func2(1, 2, 3))
+//   // func()
+
+
+//   // return skip function
+//   // break skip loop
+//   // continue skip this turn
+//   // for(let i = 0; i < arr.length; i++) {
+//   //   console.log(`start ${i}`)
+//   //   if(arr[i] === 4 ) {
+//   //     continue
+//   //   }
+//   //   console.log(arr[i])
+    
+//   // }
+  
+
+
+//   // arr.forEach(item => {
+//   //   console.log(item)
+//   // })
+
+//   // arr.map()
+//   let a = 0
+//   while(a<3) {
+//     if(a === 1) return
+//     console.log(a)
+//     a++
+
+//   }
+
+//   console.log('end')
+// }
+</script>
+</html>

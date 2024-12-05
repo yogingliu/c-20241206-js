@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <div id="hey"></div>
+  <div id="display-todo-list"></div>
+  <div style="display: flex;">
+    <!-- <input type="text" oninput="TodoListInputHandler(event)"> -->
+
+    <input id="inputTodoItem" type="text">
+
+    <!-- <input type="text" oninput="TodoListInputHandler(event)"> -->
+    <button onclick="ClickHandler()">click</button>
+  </div>
+</body>
+<script>
+  let todolist = []
+
+function ClickHandler() {
+  const inputValue = document.getElementById('inputTodoItem').value
+  todolist.push({ text: inputValue, checked: false })
+  // document.getElementById('display-todo-list').innerText += `
+  // ${inputValue}`
+  
+}
+// let tempTodoItem;
+// function ClickHandler() {
+//   // document.getElementById('display-todo-list').innerText += `
+//   // ${tempTodoItem}`
+
+// }
+// function TodoListInputHandler(e) {
+//   // console.log(e.target.value)
+//   tempTodoItem = e.target.value
+// }
+
+</script>
+</html>
